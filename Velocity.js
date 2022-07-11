@@ -1,4 +1,4 @@
-/** The directional speed of a object in motion
+/* The directional speed of a object in motion
  */
 let speed;
 let direction;
