@@ -1,3 +1,6 @@
+/**
+ * The directional speed of a object in motion
+ */
 let speed;
 let direction;
 let timestamp;
