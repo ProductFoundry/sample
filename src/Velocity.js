@@ -1,4 +1,4 @@
-/* The directional speed of a object in motion
+/* The directional speed of an object in motion
  */
 define(function (require) {
   const Position = require('./Position');
@@ -13,7 +13,7 @@ define(function (require) {
     const pos1 = new Position(p1.latitude, p1.longitude, p1.timestamp);
     const pos2 = new Position(p2.latitude, p2.longitude, p2.timestamp);
     const distance = pos2.getDistanceFrom(pos1);
-    const timeTaken = pos2.timestamp - pos1.timestamp;
+    const timeTaken = (pos2.timestamp - pos1.timestamp) / (60 * 60);
     return distance / timeTaken;
   }
   return Velocity;
