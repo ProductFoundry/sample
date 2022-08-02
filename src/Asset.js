@@ -1,7 +1,3 @@
-/* The location of an object at any moment defined by a 
-spatio-temporal extent.
- */
-
 /* Vehicles whose positions are monitored
  */
 define(function () {
