@@ -1,4 +1,4 @@
-/* The directional speed of an object in motion
+/* Reads csv data
  */
 define(function (require) {
 
