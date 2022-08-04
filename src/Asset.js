@@ -1,11 +1,13 @@
 /* Vehicles whose positions are monitored
  */
-define(function () {
+define(function (require) {
   const Position = require('./Position');
   const Velocity = require('./Velocity');
 
-  function Asset(id, lat, long, ts) {
+  function Asset(id,  assetName, assetType, lat, long, ts) {
     this.id = id;
+    this.name = assetName;
+    this.type = assetType;
     this.startPos = new Position(lat, long, ts);
     this.currentPosition = new Position(lat, long, ts);
     this.history = [];
@@ -15,8 +17,8 @@ define(function () {
 
   Asset.prototype.setCurrentPosition = function (lat, long, ts) {
     this.currentPosition = new Position(lat, long, ts);
-    this.history.push(new Position(lat, long, ts));
     this.velocity = this.velocity.calcVelocity(this.startPos, this.currentPosition);
+    this.history.push({position: new Position(lat, long, ts), velocity: Object.assign({}, this.velocity)});
   }
 
   return Asset;

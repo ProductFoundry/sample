@@ -13,7 +13,7 @@ define(function (require) {
     const pos1 = new Position(p1.latitude, p1.longitude, p1.timestamp);
     const pos2 = new Position(p2.latitude, p2.longitude, p2.timestamp);
     const distance = pos2.getDistanceFrom(pos1);
-    const timeTaken = (pos2.timestamp - pos1.timestamp) / (60 * 60);
+    const timeTaken = (pos2.timestamp - pos1.timestamp) / (60 * 60 * 1000);
 
     const radiansToDegree = (latLong) => {
       return (latLong * 180.0 / Math.PI);
