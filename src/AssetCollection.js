@@ -2,7 +2,6 @@
  */
 define(function (require) {
   const Asset = require('./Asset');
-  const Velocity = require('./Velocity');
 
   function AssetCollection(assets = []) {
     this.assets = assets;
