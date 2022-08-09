@@ -1,8 +1,8 @@
 /* Vehicles whose positions are monitored
  */
-define(function (require) {
-  const Position = require('./Position');
-  const Velocity = require('./Velocity');
+define('Asset', ['Position', 'Velocity'], function (Position, Velocity) {
+  // const Position = require('./Position');
+  // const Velocity = require('./Velocity');
 
   function Asset(id,  assetName, assetType, lat, long, ts) {
     this.id = id;

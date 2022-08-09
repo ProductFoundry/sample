@@ -1,7 +1,7 @@
 /* The directional speed of an object in motion
  */
-define(function (require) {
-  const Position = require('./Position');
+define('Velocity', ['Position'], function (Position) {
+  // const Position = require('./Position');
 
   function Velocity(speed, dir, ts) {
     this.speed = speed;

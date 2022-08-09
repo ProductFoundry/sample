@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Asset Data</title>
-        <!-- data-main attribute tells require.js to load
+
+<head>
+    <title>Asset Data</title>
+    <!-- data-main attribute tells require.js to load
              scripts/main.js after require.js loads. -->
-        <script data-main="main" src="lib/require.js"></script>
-        <script src="lib/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
-        <h1>Asset Data</h1>
-        <table id="assets"><thead>
+    <script data-main="main" src="lib/require.js"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Asset Data</h1>
+    <input type="file" class="files" id="data" />
+    <label for="data">Choose data file</label>
+    <table id="assets">
+        <thead>
             <th>
                 Name
             </th>
@@ -33,5 +38,6 @@
 
         </tbody>
     </table>
-    </body>
+</body>
+
 </html>

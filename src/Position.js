@@ -2,7 +2,7 @@
 spatio-temporal extent.
  */
 
-define(function () {
+define('Position', function () {
   function Position(lat, long, ts) {
       this.latitude = lat;
       this.longitude = long;
