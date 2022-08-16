@@ -7,7 +7,7 @@ define('Manager', ['DataFileReader', 'AssetCollection'], function (DataFileReade
 
   function Manager(fileInput, reportTable) {
     const assets = new AssetCollection();
-    fileInput.on('change', (e) => {
+    $(fileInput).on('change', (e) => {
       const { files } = e.target;
       const f = new DataFileReader(files[0]);
       const check = function () {
