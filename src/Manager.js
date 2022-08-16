@@ -1,7 +1,7 @@
 /* Creates assets and reports analysis from the data
  */
 // ENTRY Entity
-// PARAM fileInput File
+// PARAM fileInput DomElement
 // PARAM reportTable DomElement
 define('Manager', ['DataFileReader', 'AssetCollection'], function (DataFileReader, AssetCollection) {
 

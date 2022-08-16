@@ -1,7 +1,7 @@
 /* Collection of Assets
  */
 define('AssetCollection', ['Asset'], function (Asset) {
-  // const Asset = require('./Asset');
+  const t = require('Position');
 
   function AssetCollection(assets = []) {
     this.assets = assets;
