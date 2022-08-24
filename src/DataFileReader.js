@@ -4,9 +4,7 @@ define('DataFileReader', function () {
 
   function DataFileReader(f) {
     if (f.type) {
-      let reader = new FileReader();
-
-      
+      let reader = new FileReader();      
       reader.onload = () => {
         this.textToEvents(reader.result);  
       };
