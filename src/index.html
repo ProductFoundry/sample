@@ -7,37 +7,48 @@
              scripts/main.js after require.js loads. -->
     <script data-main="main" src="lib/require.js"></script>
     <script src="lib/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>Asset Data</h1>
-    <input type="file" class="files" id="data" />
-    <label for="data">Choose data file</label>
-    <table id="assets">
-        <thead>
-            <th>
-                Name
-            </th>
-            <th>
-                Time
-            </th>
-            <th>
-                Latitude
-            </th>
-            <th>
-                Longitude
-            </th>
-            <th>
-                Speed (km/h)
-            </th>
-            <th>
-                Direction
-            </th>
-        </thead>
-        <tbody>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Asset Data</h3>
+            <div class="card-text">
+                <form>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input files" id="data">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </form>
+                <table id="assets" class="table">
+                    <thead class="thead-light">
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Time
+                        </th>
+                        <th>
+                            Latitude
+                        </th>
+                        <th>
+                            Longitude
+                        </th>
+                        <th>
+                            Speed (km/h)
+                        </th>
+                        <th>
+                            Direction
+                        </th>
+                    </thead>
+                    <tbody>
 
-        </tbody>
-    </table>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
