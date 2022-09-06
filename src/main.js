@@ -2,7 +2,6 @@ define('main', ['DataFileReader', 'AssetCollection'], function (DataFileReader, 
   const fileInput = $(".files")
   const reportTable = $("#assets tbody");
   const assets = new AssetCollection();
-  debugger;
   $(fileInput).on('change', (e) => {
     const { files } = e.target;
     const f = new DataFileReader(files[0]);
