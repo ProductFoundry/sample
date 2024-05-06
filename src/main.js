@@ -16,6 +16,9 @@ define('main', ['DataFileReader', 'AssetCollection'], function (DataFileReader, 
             assets.addAsset(event.aId, event.aName, event.aType, event.lat, event.long, event.ts)
           }
         });
+        if (window.readScope) {
+          window.readScope({"assets": assets});
+        }
         assets.getAllAssets().forEach(a => {
           const tr = $("<tr></tr>")
           $(tr).append("<td>" + a.name + "</td>")
