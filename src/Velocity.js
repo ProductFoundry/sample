@@ -7,6 +7,7 @@ define('Velocity', ['Position'], function (Position) {
     this.speed = speed;
     this.direction = dir;
     this.timestamp = ts;
+    this.prototype = this.constructor.name;
   }
 
   Velocity.prototype.calcVelocity = function (p1, p2) {

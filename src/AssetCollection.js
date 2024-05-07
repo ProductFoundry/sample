@@ -5,6 +5,7 @@ define('AssetCollection', ['Asset'], function (Asset) {
 
   function AssetCollection(assets = []) {
     this.assets = assets;
+    this.prototype = this.constructor.name;
   }
 
   AssetCollection.prototype.addAsset = function (assetId, assetName, assetType, lat, long, ts) {
