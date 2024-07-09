@@ -21,4 +21,5 @@ define('Asset', ['Position', 'Velocity'], function (Position, Velocity) {
   }
 
   return Asset;
+
 });
