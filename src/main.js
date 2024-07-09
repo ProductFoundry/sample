@@ -31,7 +31,7 @@ define('main', ['DataFileReader', 'AssetCollection'], function (DataFileReader, 
         })
         return;
       }
-      setTimeout(check, 1004);
+      setTimeout(check, 1005);
     }
 
     check();
