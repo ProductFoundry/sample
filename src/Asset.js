@@ -14,6 +14,7 @@ define('Asset', ['Position', 'Velocity'], function (Position, Velocity) {
     this.prototype = this.constructor.name;
   }
 
+  //test comment1
   Asset.prototype.setCurrentPosition = function (lat, long, ts) {
     this.currentPosition = new Position(lat, long, ts);
     this.velocity = this.velocity.calcVelocity(this.startPos, this.currentPosition);
